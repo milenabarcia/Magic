@@ -18,3 +18,5 @@
 .link-youtube {
     color: crimson;
 }
+
+::marker{ color: crimson;}

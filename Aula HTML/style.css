@@ -4,3 +4,9 @@
 
     width: 50px;
 }
+
+::marker{
+    color: crimson;
+    size: 5px;
+    text-shadow: 3px 3px #b8b8b8;
+}
