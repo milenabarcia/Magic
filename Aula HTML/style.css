@@ -10,3 +10,17 @@
     size: 5px;
     text-shadow: 3px 3px #b8b8b8;
 }
+
+
+        .pontilhado {
+            text-decoration: underline dotted; /* Sublinhado pontilhado */
+            text-decoration-thickness: 2px;    /* Espessura do sublinhado */
+            text-decoration-color: #333;       /* Cor do sublinhado */
+        }
+
+        .sublinhado {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;    /* Espessura do sublinhado */
+            text-decoration-color: #333;  
+        }
+   
