@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Catálogo de Produtos</title>
+    <style>
+       
+        table {
+            width: 50%;
+            border-collapse: collapse;
+          
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 8px;
+            
+        }
+
+        img {
+            width: 100px;
+            
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Catálogo de Produtos</h1>
+    <br>
+    <table>
+        <thead>
+            <th> </th>
+            <th>Foto</th>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Qtde em estoque</th>
+            <th>Valor Unitário</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="../img/mousefio.jpg" alt=""></td>
+                <td>1</td>
+                <td>Mouse Laser com fio Dell</td>
+                <td> 5</td>
+                <td>R$179,00</td>
+            </tr>
+
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="../img/Mousebuetooh.jpg" alt=""></td>
+                <td>2</td>
+                <td>Mouse Bluetooth Dell</td>
+                <td>6</td>
+                <td>R$338,00</td>
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="../img/mouseoptico.jpg" alt=""></td>
+                <td>3</td>
+                <td>Mouse óptico usb preto 100</td>
+                <td>3</td>
+                <td>R$48,30</td>
+            </tr>
+
+
+
+        </tbody>
+
+    </table>
+    <br>
+    <h2>Descrição</h2>
+    <br>
+    <h3>Características do Produto </h3>
+    <p><label for="Especificações"> <STrong>Especificações</STrong></label></p>
+    <br>
+    <select name="Especificações" id="Especificações">
+        <option value="1">Mouse Laser com fio Dell</option>
+        <option value="2">Mouse Bluetooth Dell</option>
+        <option value="3">Mouse óptico usb preto 100</option>
+    </select>
+
+    <ul>
+        <li>Sensor óptico preciso com 1.600 DPI permite que você trabalhe na maioria das superfícies</li>
+        <li>Configuração USB rápida e fácil com cabo de 1,5m</li>
+        <li>Design ambidestro, produzido para caber de forma natural e perfeita na palma da sua mão</li>
+        <li>Três botões integrados</li>
+        <li>Ampla compatibilidade: Windows e Mac</li>
+
+    </ul>
+
+<br>
+<h3>Avaliação do Produto</h3>
+<dl>
+    <dt style="text-align: heigth:; font-weight: bold;"> José Aparecido</dt> 
+    <br>
+    <dd>Muito Bom</dd>
+    <br>
+    <dt style="text-align: height: ; font-weight: bold;"> Joaquim Jorge</dt> 
+    <br>
+    <dd>Bom</dd>
+</dl>
+</body>
+
+</html>
