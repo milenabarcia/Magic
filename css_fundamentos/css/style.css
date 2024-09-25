@@ -1,0 +1,11 @@
+*{
+    background-image: url(../img/zoro-one-piece.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    opacity: 0.5;
+    margin: 0;
+    position: fixed;
+}
