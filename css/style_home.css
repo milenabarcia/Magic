@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalnia+Glaze:wght@100..700&display=swap');
 
-html {
+/*html {
     background-image:url(../img/logo_loja2.jfif);
     width: 100%;
-    background-size: cover;
+    background-size: cover ;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
@@ -12,7 +12,7 @@ html {
     position: fixed;
     z-index: 0;
 
-}
+}*/
 body, ul {
     margin: 0;
     padding: 0;
@@ -70,4 +70,15 @@ z-index: 5;
 #btn-mobile {
     display: none;
 
+}
+* Ajusta o contêiner do carousel para ocupar 100% da altura da tela */
+.carousel-inner {
+    height: 100vh; /* Define a altura do carousel para 100% da altura da janela */
+}
+
+/* Ajusta as imagens para ocupar toda a largura e altura do carousel */
+.carousel-inner img {
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    height: 100vh; /* Ajusta a altura para 100% da janela, garantindo que não haverá rolagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorção, mas pode cortar bordas */
 }

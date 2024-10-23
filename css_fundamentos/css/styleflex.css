@@ -1,0 +1,30 @@
+
+div {
+    border: 1px solid #000;
+}
+
+.box {
+    display: flex;
+    /* Eixo principal se moverá ao longo da linha > da direita para a esquerda em Row-reverse*/
+    /*flex-direction: row-reverse;*/
+    flex-direction: row;
+    /* Causa quebra de linha para se adequar a tela flex-wrap*/
+    flex-wrap: wrap;
+    justify-content: space-between;/*alinhamento na horizontal*/
+    align-items: center ;/*Alinhamento na vertical*/
+}
+.box figure img {
+    width: 20%;
+    height: auto;
+    justify-content: center;
+}
+.box .barraca {
+    border: 1px solid #000;
+    width: 170px;
+
+}
+
+.box .barraca img {
+    width: 50%;
+}
+

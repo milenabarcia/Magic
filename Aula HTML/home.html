@@ -1,30 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_home.css">
+    <link rel="stylesheet" href="../css_fundamentos/bootstrap/css/bootstrap.min.css">
     <title>Lojinha de Magic</title>
 </head>
+
 <body>
-    
+
     <!-- Ínicio Menu -->
-    
+
     <header id="header">
         <a id="logo" href="./home.html"><img src="../img/logo_loja2.jfif" alt=" Logo Magic Story"></a>
         <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu" role="menu">
-            <li><a class="linkMenu" href="./home.html">Home</a></li>
-            <li><a class="linkMenu" href="./home.html">Quem Somos</a></li>
-            <li><a class="linkMenu" href="./home.html">Produto</a></li>
-            <li><a class="linkMenu" href="./home.html">Contato</a></li>
-            <li><a class="linkMenu" href="./home.html">#Blog</a></li>
+                <li><a class="linkMenu" href="./home.html">Home</a></li>
+                <li><a class="linkMenu" href="./home.html">Quem Somos</a></li>
+                <li><a class="linkMenu" href="./home.html">Produto</a></li>
+                <li><a class="linkMenu" href="./home.html">Contato</a></li>
+                <li><a class="linkMenu" href="./home.html">#Blog</a></li>
             </ul>
             <!-- Fim Opções de Menu -->
         </nav>
     </header>
+    <!-- Início Carousel Página Home -->
+    <div id="carouselExampleInterval" 
+    class="carouselslide" 
+    data-bs-ride="carousel" 
+    data-bs-pause="false">
+        
+    <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img src="../img/carta1.jpg" class="d-block w-100" alt="">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="../img/carta2.jpg" class="d-block w-100" alt="">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="../img/carta3.jpg" class="d-block w-100" alt="">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="../img/carta4.jpg" class="d-block w-100" alt="">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="../img/carta5.jpg" class="d-block w-100" alt="">
+                </div>
+
+        </div>
+        <!-- Início controle carousel -->
+         <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button " data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+
+         </button>
+         <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button " data-bs-slide="next" >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+
+         </button>
+         <!-- Fim controle do Carousel -->
+    </div>
+    <!-- Fim Carousel Página Home -->
 </body>
+<script type="text/javascript" src="../css_fundamentos/bootstrap/js/bootstrap.min.js"></script>
+
 </html>
