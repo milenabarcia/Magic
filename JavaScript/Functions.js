@@ -42,5 +42,9 @@ setTimeout(() => {
     alert('Executado após 2 segundos!');
 },2000);
 
-
+// alert > ele executa o toString do seu objeto e apresenta em tela
+// consolo.log > registra a informação no console do navegador ficando restrita ao conhecimento do desenvolvedor
 // uso principal: atrasar execuções ou criar temporizadores
+
+
+// Aula JavaScript > DOM E Functions
