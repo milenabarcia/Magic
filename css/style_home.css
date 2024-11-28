@@ -98,7 +98,12 @@ margin-top: 10px;
 /*.carousel-inner {
     height: 100vh; /* Define a altura do carousel para 100% da altura da janela 
 }*/
-
+/*/* Ajusta as imagens para ocupar toda a largura e altura do carousel */
+/*.carousel-inner img {
+    width: 100%;  Ajusta a largura para 100% do contêiner */
+    /* height: 100vh; Ajusta a altura para 100% da janela, garantindo que não haverá rolagem */
+   /* object-fit: cover;  Garante que a imagem cubra o espaço sem distorção, mas pode cortar bordas 
+}*/
 
 @media (max-width: 600px ){
     #menu {
@@ -169,10 +174,244 @@ margin-top: 10px;
         top: -7px;
     }
 }
-
-/*/* Ajusta as imagens para ocupar toda a largura e altura do carousel */
-/*.carousel-inner img {
-    width: 100%;  Ajusta a largura para 100% do contêiner */
-    /* height: 100vh; Ajusta a altura para 100% da janela, garantindo que não haverá rolagem */
-   /* object-fit: cover;  Garante que a imagem cubra o espaço sem distorção, mas pode cortar bordas 
-}*/
+/* Efeito pulse */
+.whatsapp .pulse {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+@-webkit-keyframes pulse{
+    0%{
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100%{
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(100%);
+    }
+}
+/*  fim whatsapp */
+/* CSS Estilos Banner */
+.section-banner-home {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    background-color: #5d5d5d;
+    display: ruby-base-container;
+    }
+    .section-banner-home img {
+    padding: 20px;
+    max-height: 400px;
+    width: 100%;
+    /* Verificar responsivo */
+    }
+    .section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+    }
+    .section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: white;
+    }
+    .section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+    }
+    .section-banner-home .texto-banner a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #424242;
+    padding: 4px 24px;
+    font-size: 15px;
+    }
+    /* Fim css estilos Banner */
+    /* Início css destaque */
+    .destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    }
+    .destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+    }
+    .destaque figcaption {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    }
+    .destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+    }
+    .destaque a:hover {
+    color: hsl(251, 100%, 50%);
+    font-size: 24px;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px #0000007a;
+    }
+    .destaque img {
+    height: 220px;
+    }
+    /* Fim CSS Destaque */
+    /* Início CSS Novidades */
+    .novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+    }
+    .novidades h2 {
+    color: #000;
+    }
+    .novidades p {
+    color: rgb(0, 0, 0);
+    }
+    .novidades a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: #7f147f;
+    padding: 6px 12px;
+    background-color: rgb(0, 68, 194);
+    font-weight: 400;
+    }
+    /* Fim CSS Novidades */
+    /* Início CSS Galeria */
+    .galeria {
+    margin: 60px auto 20px;
+    /* Quando tivermos 4 valores no margin = top / right / botton / left > Ex:
+    margin: 60px 60px 60px 60px;
+    Quando tivermos 3 valores = top / right and left / botton
+    > Ex: margin: 60px auto 60px;
+    Quanto tivermos 2 valores = top and botton / right and left
+    > Ex: margin: 60px 30px;
+    Quando tivermos 1 valor = top and botton and right and left
+    > Ex: margin: 60px;
+    >> Essa regra vale também para padding. <<
+    */
+    }
+    .galeria .container {
+    margin-left: 11%;
+    }
+    .galeria h2 {
+    text-align: center;
+    font-size: 24px;
+    }
+    .galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+    }
+    .galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+    }
+    .galeria .gallery img {
+    width: 80%;
+    height: 80%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    display: block;
+    }
+    .galeria .gallery img:hover {
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    /* Fim CSS Galeria */
+    /* Início CSS Footer */
+    .rodape {
+    padding: 50px 50px 0;
+    }
+    .rodape .container #img-logo {
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;
+    }
+    .rodape .container #img-logo:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    .rodape .info-contato p {
+    margin: 0;
+    }
+    .rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    }
+    .rodape a:hover {
+    font-weight: bold;
+    }
+    .rodape .redes-sociais {
+    display: inline-block;
+    }
+    .rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0.7rem;
+    transition: transform .3s;
+    border-radius: 15px;
+    /* Arredondando div do obejto redes sociais */
+    }
+    .rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+    }
+    .rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+    }
+    /* Fim CSS Footer . */
+    /* Início Whatsapp */
+    .whatsapp {
+    position: fixed;
+    z-index: 200;
+    top: 400px;
+    right: 20px;
+    }
+    .whatsapp img {
+    height: 60px;
+    }
+    * Ajusta o tamanho do logo no rodapé */
+    #logo-rodape figure img {
+        width: 100%; /* Ajuste automático ao contêiner */
+        max-width: 150px; /* Limite máximo para o tamanho */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Remove espaçamento ao redor da imagem */
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    
+    /* Estilo para telas maiores */
+    @media (min-width: 768px) {
+        #logo-rodape figure img {
+            max-width: 200px; /* Aumenta o tamanho em telas maiores */
+        }
+    }
+    
+    /* Estilo para telas pequenas */
+    @media (max-width: 767px) {
+        #logo-rodape figure img {
+            max-width: 120px; /* Reduz o tamanho em dispositivos móveis */
+        }
+    }
